@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.container {   
+    // PAGE 1
+    @import 'pages/page1.scss';
+    // PAGE 2
+    @import 'pages/page2.scss';
+    // PAGE 3
+    @import 'pages/page3.scss';
+    position: relative;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .bgimg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(img/Table.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        opacity: 1;
+        // animation-name: bgc-start;
+        animation-duration: 1s;
+        animation-delay: 0.3s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        z-index: -1;
+    }
+
+    @keyframes bgc-start {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+

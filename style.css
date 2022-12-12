@@ -1,0 +1,478 @@
+body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.container .main_page {
+  display: grid;
+  min-width: 537px;
+  min-height: 707px;
+  width: 35vw;
+  height: 95vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 28.5vh repeat(2, auto);
+  position: absolute;
+  left: 120%;
+  top: -10vh;
+  transform: translate(0%, -50%) rotate(30deg) scale(0.6);
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 240);
+  border-radius: 1%;
+  overflow: hidden;
+  font-family: Cabin, Poppins, sans-serif;
+  transition: 1s;
+  animation-name: start_page1;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  z-index: 2;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  font-size: initial;
+  border: 0.5px solid rgb(200, 200, 200);
+}
+@keyframes start_page1 {
+  0% {
+    left: 120%;
+    top: -10vh;
+  }
+  100% {
+    left: 50%;
+    top: 50vh;
+  }
+}
+.container .main_page:focus-within {
+  transform: rotate(0deg) translate(-50%, -50%) scale(1);
+  transition: 1.5s;
+  z-index: 6;
+}
+.container .foto {
+  width: 100%;
+  height: 100%;
+  background: url(../img/foto.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 35%;
+  border-radius: 0 0 3% 0;
+}
+.container .profile_exp,
+.container .aduc {
+  height: 100%;
+}
+.container .profile_exp {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2% 5% 2% 8%;
+  margin-top: 1vh;
+}
+.container .profile_exp div:nth-of-type(2) {
+  font-size: 0.8rem;
+}
+.container .aduc {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  box-sizing: border-box;
+  padding: 2% 5% 2% 8%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: flex-start;
+}
+.container .aduc h3:first-of-type {
+  margin-bottom: 0;
+}
+.container .exp {
+  box-sizing: border-box;
+  padding: 2% 5% 2% 8%;
+}
+.container .exp h3,
+.container .exp h4 {
+  text-transform: uppercase;
+}
+.container .contact_ph_soc {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  display: flex;
+  flex-flow: row wrap;
+}
+.container .contact_ph_soc > h3 {
+  width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+}
+.container .contact_ph_soc > div {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  padding: 1% 2.5% 1% 4%;
+  flex-shrink: 0;
+}
+.container .contact_ph_soc .phone_social {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+  gap: 1.5vh;
+}
+.container .contact_ph_soc .phone {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1vw;
+  text-align: left;
+}
+.container .contact_ph_soc .phone::before {
+  content: "";
+  background: url(../img/phone.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+.container .contact_ph_soc .h_soc {
+  text-transform: uppercase;
+}
+.container .contact_ph_soc .social_networks {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 48px;
+}
+.container .contact_ph_soc .social_networks a {
+  width: 48px;
+  height: 48px;
+  transition: 1s;
+}
+.container .contact_ph_soc .social_networks .instagram {
+  background: url(../img/instagram.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.container .contact_ph_soc .social_networks .telegram {
+  background: url(../img/telegram.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .contact_ph_soc .social_networks .vk {
+  background: url(../img/VK.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.container .contact_ph_soc .social_networks .github {
+  background: url(../img/GitHub.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .contact_ph_soc .social_networks a:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+.container .contact_ph_soc .contacts {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2vh;
+}
+.container .contact_ph_soc .contacts input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 2rem;
+  border: none;
+  border-radius: 5%/50%;
+  background-color: transparent;
+  box-shadow: 0 0 3px 1px black;
+  padding-left: 5%;
+}
+.container .contact_ph_soc .contacts input:focus {
+  outline: none;
+}
+.container .contact_ph_soc .contacts .us_messege {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5vh;
+}
+.container .contact_ph_soc .contacts .us_messege textarea {
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  border: none;
+  box-shadow: 0 0 3px 1px black;
+  padding: 2% 5%;
+  border-radius: 5%/30%;
+  background-color: transparent;
+}
+.container .contact_ph_soc .contacts .us_messege textarea:focus {
+  outline: none;
+}
+.container .page2 {
+  min-width: 537px;
+  min-height: 707px;
+  width: 35vw;
+  height: 95vh;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 240);
+  border-radius: 1%;
+  overflow: hidden;
+  font-family: Cabin, Poppins, sans-serif;
+  transition: 1s;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  font-size: initial;
+  border: 0.5px solid rgb(200, 200, 200);
+  display: flex;
+  flex-flow: column nowrap;
+  transform: translate(-10%, -55%) rotate(20deg) scale(0.6);
+  top: -10vh;
+  left: 120%;
+  padding: 1% 2% 3%;
+  animation-name: start_page2;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+@keyframes start_page2 {
+  0% {
+    top: -10vh;
+    left: 120%;
+  }
+  100% {
+    top: 50vh;
+    left: 50%;
+  }
+}
+.container .page2 > h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.container .page2 .biography_hobb {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+.container .page2 .biography_hobb h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.container .page2 .biography_hobb .hobbys {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.container .page2 .biography_hobb .hobbys > div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2vh;
+}
+.container .page2 .biography_hobb .hobbys .snowbord div:first-of-type {
+  width: 96px;
+  height: 96px;
+  background-image: url(../img/snoubord.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page2 .biography_hobb .hobbys .video_game div:first-of-type {
+  width: 96px;
+  height: 96px;
+  background-image: url(../img/computer.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page2 .biography_hobb .hobbys .travel div:first-of-type {
+  width: 96px;
+  height: 96px;
+  background-image: url(../img/Traveling.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page2 .biography_hobb .hobbys .cooking div:first-of-type {
+  width: 96px;
+  height: 96px;
+  background-image: url(../img/cooking.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page2:focus {
+  transform: rotate(0deg) translate(-50%, -50%) scale(1);
+  transition: 1.5s;
+  z-index: 6;
+}
+.container .page3 {
+  min-width: 537px;
+  min-height: 707px;
+  width: 35vw;
+  height: 95vh;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 240);
+  border-radius: 1%;
+  overflow: hidden;
+  font-family: Cabin, Poppins, sans-serif;
+  transition: 1s;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  font-size: initial;
+  border: 0.5px solid rgb(200, 200, 200);
+  display: flex;
+  flex-flow: column nowrap;
+  transform: translate(20%, -50%) rotate(50deg) scale(0.6);
+  top: -10vh;
+  left: 120%;
+  padding: 1% 2% 3%;
+  animation-name: start_page3;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  z-index: 0;
+}
+@keyframes start_page3 {
+  0% {
+    left: 120%;
+    top: -10vh;
+  }
+  100% {
+    left: 50%;
+    top: 50vh;
+  }
+}
+.container .page3 > h3 {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+.container .page3 .lang_program {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .page3 .lang_program > div {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container .page3 .lang_program .html_skill {
+  align-items: center;
+}
+.container .page3 .lang_program .html_skill div:first-of-type {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/icon_html.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page3 .lang_program .css_skill {
+  align-items: center;
+}
+.container .page3 .lang_program .css_skill div:first-of-type {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/icon_css.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page3 .lang_program .scss_skill {
+  align-items: center;
+}
+.container .page3 .lang_program .scss_skill div:first-of-type {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/icon_sass.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page3 .lang_program .git_skill {
+  align-items: center;
+}
+.container .page3 .lang_program .git_skill div:first-of-type {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/icon_git.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page3 .res_program {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .page3 .res_program > div {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container .page3 .res_program .js_skill {
+  align-items: center;
+}
+.container .page3 .res_program .js_skill div:first-of-type {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/icon_jc.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .page3 .my_projects {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1vw;
+}
+.container .page3 .my_projects > a {
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 69, 0);
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 4px 4px rgb(255, 140, 0);
+  transition: 0.5s;
+}
+.container .page3 .my_projects a:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+.container .page3:focus {
+  transform: rotate(0deg) translate(-50%, -50%) scale(1);
+  transition: 1.5s;
+  z-index: 6;
+}
+.container .bgimg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(img/Table.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  opacity: 1;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@keyframes bgc-start {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,104 @@
+.page2 {
+    @import '../vars';
+    @import '../mixins';
+    @include page_stand;
+
+    display: flex;
+    flex-flow: column nowrap;
+    transform: translate(-10%, -55%) rotate(20deg) scale(0.6);
+    top: -10vh;
+    left: 120%;
+    padding: 1% 2% 3%;
+    animation-name: start_page2;
+    animation-duration: 2s;
+    animation-delay: $start-page-time + 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    z-index: 1;
+
+    @keyframes start_page2 {
+        0% {
+            top: -10vh;
+            left: 120%;
+        }
+
+        100% {
+            top: 50vh;
+            left: 50%;
+        }
+    }
+
+    >h3 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .biography_hobb {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+
+        h3 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .hobbys {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            >div {
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 2vh;
+            }
+
+            .snowbord {
+                div:first-of-type{
+                width: $width-height-icon-hobbys;
+                height: $width-height-icon-hobbys;
+                background-image: url(../img/snoubord.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                }
+            }
+
+            .video_game {
+                div:first-of-type{
+                width: $width-height-icon-hobbys;
+                height: $width-height-icon-hobbys;
+                background-image: url(../img/computer.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                }
+            }
+
+            .travel {
+                div:first-of-type{
+                    width: $width-height-icon-hobbys;
+                    height: $width-height-icon-hobbys;
+                    background-image: url(../img/Traveling.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .cooking {
+                div:first-of-type{
+                    width: $width-height-icon-hobbys;
+                    height: $width-height-icon-hobbys;
+                    background-image: url(../img/cooking.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.page2:focus {
+    transform: rotate(0deg) translate(-50%, -50%) scale(1);
+    transition: 1.5s;
+    z-index: 6;
+}

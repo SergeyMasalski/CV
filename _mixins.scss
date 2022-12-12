@@ -1,0 +1,20 @@
+@import 'vars';
+
+@mixin page_stand {
+    min-width: $min-width-page;
+    min-height: $min-height-page;
+    width: $width-page1;
+    height: $height-page1;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgb(	255, 255, 240);
+    border-radius: 1%;
+    overflow: hidden;
+    font-family: Cabin, Poppins, sans-serif;
+    transition: 1s;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    font-size: initial;
+    border: 0.5px solid rgb(200, 200, 200);
+}
