@@ -1,1 +1,1 @@
-The page is available on 
+The page is available on https://sergeymasalski.github.io/CV/
