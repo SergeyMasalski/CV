@@ -9,11 +9,11 @@ body {
 
 .container {   
     // PAGE 1
-    @import 'pages/page1.scss';
+    @import 'pages/page1';
     // PAGE 2
-    @import 'pages/page2.scss';
+    @import 'pages/page2';
     // PAGE 3
-    @import 'pages/page3.scss';
+    @import 'pages/page3';
 
     
     position: relative;
