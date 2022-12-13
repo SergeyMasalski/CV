@@ -1,5 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 body {
   margin: 0;
+}
+@media screen and (max-width: 850px) {
+  body .container .bgimg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/Table_media_cont.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 0;
+    animation-name: bgc-start_media;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    z-index: -1;
+  }
+  @keyframes bgc-start_media {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  body .container .main_page {
+    left: -150vw;
+    top: 50vh;
+    transform: translate(-80%, -60%) rotate(0deg) scale(0.8);
+    animation-name: start_page1_media;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    z-index: 2;
+  }
+  @keyframes start_page1_media {
+    0% {
+      left: -150vw;
+      top: 50vh;
+    }
+    100% {
+      left: 50%;
+      top: 50vh;
+    }
+  }
+  body .container .page2 {
+    display: flex;
+    flex-flow: column nowrap;
+    transform: translate(-60%, -55%) rotate(0deg) scale(0.8);
+    top: 200vh;
+    left: 50%;
+    animation-name: start_page2_media;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    z-index: 1;
+  }
+  @keyframes start_page2_media {
+    0% {
+      top: 200vh;
+      left: 50%;
+    }
+    100% {
+      top: 50vh;
+      left: 50%;
+    }
+  }
+  body .container .page3 {
+    display: flex;
+    flex-flow: column nowrap;
+    transform: translate(-40%, -50%) rotate(0deg) scale(0.8);
+    top: 200vh;
+    left: 50%;
+    padding: 1% 2% 3%;
+    animation-name: start_page3_media;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    z-index: 0;
+  }
+  @keyframes start_page3_media {
+    0% {
+      left: 200%;
+      top: 50vh;
+    }
+    100% {
+      left: 50%;
+      top: 50vh;
+    }
+  }
 }
 
 .container {
@@ -330,7 +426,7 @@ body {
   border: 0.5px solid rgb(200, 200, 200);
   display: flex;
   flex-flow: column nowrap;
-  transform: translate(20%, -50%) rotate(50deg) scale(0.6);
+  transform: translate(0%, -60%) rotate(30deg) scale(0.6);
   top: -10vh;
   left: 120%;
   padding: 1% 2% 3%;
@@ -445,7 +541,7 @@ body {
   transform: scale(1.2);
   transition: 0.5s;
 }
-.container .page3:focus {
+.container .page3:focus-within {
   transform: rotate(0deg) translate(-50%, -50%) scale(1);
   transition: 1.5s;
   z-index: 6;
@@ -460,7 +556,8 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   opacity: 1;
-  animation-duration: 1s;
+  animation-name: bgc-start;
+  animation-duration: 3s;
   animation-delay: 0.3s;
   animation-direction: normal;
   animation-fill-mode: forwards;

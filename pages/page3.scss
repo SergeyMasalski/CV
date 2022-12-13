@@ -5,7 +5,7 @@
 
     display: flex;
     flex-flow: column nowrap;
-    transform: translate(20%, -50%) rotate(50deg) scale(0.6);
+    transform: translate(0%, -60%) rotate(30deg) scale(0.6);
     top: -10vh;
     left: 120%;
     padding: 1% 2% 3%;
@@ -140,7 +140,7 @@
     }
 }
 
-.page3:focus {
+.page3:focus-within {
     transform: rotate(0deg) translate(-50%, -50%) scale(1);
     transition: 1.5s;
     z-index: 6;
