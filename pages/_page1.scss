@@ -54,7 +54,7 @@
 .foto {
     width: 100%;
     height: 100%;
-    background: url(../img/foto.jpg);
+    background: url(img/foto.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: 0;
@@ -137,11 +137,16 @@
         align-items: center;
         gap: 1vw;
         text-align: left;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
 
     .phone::before {
         content: "";
-        background: url(../img/phone.png);
+        background: url(img/phone.png);
         background-size: 100%;
         background-repeat: no-repeat;
         width: $width-height-phone;
@@ -165,27 +170,27 @@
         }
 
         .instagram {
-            background: url(../img/instagram.png);
+            background: url(img/instagram.png);
             background-size: 100%;
             background-repeat: no-repeat;
             border-radius: 50%;
         }
 
         .telegram {
-            background: url(../img/telegram.png);
+            background: url(img/telegram.png);
             background-size: 100%;
             background-repeat: no-repeat;
         }
 
         .vk {
-            background: url(../img/VK.png);
+            background: url(img/VK.png);
             background-size: 100%;
             background-repeat: no-repeat;
             border-radius: 50%;
         }
 
         .github {
-            background: url(../img/GitHub.png);
+            background: url(img/GitHub.png);
             background-size: 100%;
             background-repeat: no-repeat;
         }

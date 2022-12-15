@@ -8,7 +8,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../img/Table_media_cont.webp);
+    background: url(img/Table_media_cont.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -155,7 +155,7 @@ body {
 .container .foto {
   width: 100%;
   height: 100%;
-  background: url(../img/foto.jpg);
+  background: url(img/foto.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: 0;
@@ -227,9 +227,13 @@ body {
   gap: 1vw;
   text-align: left;
 }
+.container .contact_ph_soc .phone a {
+  text-decoration: none;
+  color: black;
+}
 .container .contact_ph_soc .phone::before {
   content: "";
-  background: url(../img/phone.png);
+  background: url(img/phone.png);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 2rem;
@@ -250,24 +254,24 @@ body {
   transition: 1s;
 }
 .container .contact_ph_soc .social_networks .instagram {
-  background: url(../img/instagram.png);
+  background: url(img/instagram.png);
   background-size: 100%;
   background-repeat: no-repeat;
   border-radius: 50%;
 }
 .container .contact_ph_soc .social_networks .telegram {
-  background: url(../img/telegram.png);
+  background: url(img/telegram.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .container .contact_ph_soc .social_networks .vk {
-  background: url(../img/VK.png);
+  background: url(img/VK.png);
   background-size: 100%;
   background-repeat: no-repeat;
   border-radius: 50%;
 }
 .container .contact_ph_soc .social_networks .github {
-  background: url(../img/GitHub.png);
+  background: url(img/GitHub.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -377,28 +381,28 @@ body {
 .container .page2 .biography_hobb .hobbys .snowbord div:first-of-type {
   width: 96px;
   height: 96px;
-  background-image: url(../img/snoubord.png);
+  background-image: url(img/snoubord.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .container .page2 .biography_hobb .hobbys .video_game div:first-of-type {
   width: 96px;
   height: 96px;
-  background-image: url(../img/computer.png);
+  background-image: url(img/computer.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .container .page2 .biography_hobb .hobbys .travel div:first-of-type {
   width: 96px;
   height: 96px;
-  background-image: url(../img/Traveling.png);
+  background-image: url(img/Traveling.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .container .page2 .biography_hobb .hobbys .cooking div:first-of-type {
   width: 96px;
   height: 96px;
-  background-image: url(../img/cooking.png);
+  background-image: url(img/cooking.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -468,7 +472,7 @@ body {
 .container .page3 .lang_program .html_skill div:first-of-type {
   width: 80px;
   height: 80px;
-  background-image: url(../img/icon_html.png);
+  background-image: url(img/icon_html.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -478,7 +482,7 @@ body {
 .container .page3 .lang_program .css_skill div:first-of-type {
   width: 80px;
   height: 80px;
-  background-image: url(../img/icon_css.png);
+  background-image: url(img/icon_css.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -488,7 +492,7 @@ body {
 .container .page3 .lang_program .scss_skill div:first-of-type {
   width: 80px;
   height: 80px;
-  background-image: url(../img/icon_sass.png);
+  background-image: url(img/icon_sass.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -498,7 +502,7 @@ body {
 .container .page3 .lang_program .git_skill div:first-of-type {
   width: 80px;
   height: 80px;
-  background-image: url(../img/icon_git.png);
+  background-image: url(img/icon_git.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -518,7 +522,7 @@ body {
 .container .page3 .res_program .js_skill div:first-of-type {
   width: 80px;
   height: 80px;
-  background-image: url(../img/icon_jc.png);
+  background-image: url(img/icon_jc.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -555,7 +559,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  opacity: 1;
+  opacity: 0;
   animation-name: bgc-start;
   animation-duration: 3s;
   animation-delay: 0.3s;
